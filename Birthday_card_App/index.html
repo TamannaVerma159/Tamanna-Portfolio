@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Birthday Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Personalized Birthday Card</h1>
+        <input type="text" id="recipientName" placeholder="Recipient's Name🧑">
+        <textarea id="message" placeholder="Your Birthday Message🧧✉"></textarea>
+        <input type="file" id="imageUpload" accept="image/*">
+        <div><!-- ... (previous HTML code) ... -->
+            <input type="color" id="borderColor" value="#000000">
+            <select id="borderStyle">
+                <option value="solid">Solid</option>
+                <option value="dotted">Dotted</option>
+                <option value="dashed">Dashed</option>
+            </select>
+            <select id="fontStyle">
+                <option value="Arial, sans-serif">Arial</option>
+                <option value="Georgia, serif">Georgia</option>
+                <option value="Courier New, monospace">Courier New</option>
+                <!-- Add more font options here as needed -->
+            </select>
+          
+            <!-- ... (rest of the HTML code) ... -->
+            </div>
+            <!-- ... (previous HTML code) ... -->
+            <div id="cardPreview" class="card-preview"></div>
+            <button onclick="generateCard()">Generate Card</button>
+            <button onclick="downloadCard()">Download Card</button> 
+    </div>
+
+    <script src="function.js"></script>
+</body>
+</html>
